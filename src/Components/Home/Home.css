@@ -1,0 +1,199 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+.Home{
+    width: 100vw;
+    min-height: 80vh;
+}
+
+.picture{
+    width: 100vw;
+    height: 100vh;
+    background-image: url('./assets/WallpaperDC.jpg');
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+.mainPara{
+    position: absolute;
+    top: 20%;
+    left: 10%;
+    color: azure;
+    width: 400px;
+}
+
+
+h1{
+    font-family: 'Libre Baskerville', serif;
+    font-weight: 900;
+
+}
+
+p{
+    margin: 20px 0 40px 0;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.8em;
+    text-shadow: 3px 3px 3px black;
+}
+
+
+.color-Text{
+    color: #5994D3;
+    text-shadow: 3px 3px 3px black;
+}
+
+.home-button{
+    padding: 10px 20px 10px 20px;
+    background-color: #5994D3;
+    cursor: pointer;
+    border: none;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    transition: background-color .3s;
+}
+
+.home-button:hover{
+    background-color: #b92527;
+
+}
+
+.about{
+    width: 100vw;
+    min-height: 100vh;
+    background-color: #393C43;
+}
+
+.aboutTop{
+    width:  100vw;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 2em;
+}
+
+.aboutPara{
+    width: 600px;
+    text-align: center;
+    text-shadow: none !important;
+    font-family: 'Montserrat', sans-serif;
+    
+}
+
+.aboutTop>span{
+    color: #5994D3;
+    font-size: 0.8em;
+    font-weight: 800;
+}
+
+.aboutHead{
+    margin-top: 30px;
+}
+
+.aboutHead>span, .aboutBottomHead{
+    color: #5994D3;
+    text-shadow: 3px 3px 3px black;
+}
+
+.aboutBottom{
+    display: flex;
+    align-items: center;
+    gap: 2em;
+    width:  100vw;
+    height: 50vh;
+}
+
+.aboutBottomRight > p{
+    text-shadow: none !important;
+}
+
+.aboutBottomRight>span{
+   margin-bottom: 0.8em;
+   font-weight: 700;
+   font-family: 'Montserrat', sans-serif;
+}
+
+.aboutPic{
+    width: 350px;
+    height: 230px;
+    border: none;
+    border-radius: 5px;
+    margin-left: 20em;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.524);
+}
+
+.aboutBottomRight{
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 2.5em;
+}
+
+
+
+@media screen and (max-width: 480px) {
+  
+    .mainPara>h1,.aboutTop>h1{
+        font-size: 1.5em;
+    }
+    .mainPara>p,.aboutTop>p{
+        font-size: 0.6em;
+    }
+    .mainPara{
+        width: 300px;
+        top: 30%;
+    }
+
+    .aboutTop{
+        width: 300px;
+        margin-left: 2.5em;
+        padding-top: 0.1em;
+    }
+
+    .aboutPara{
+        width: 300px;
+    }
+
+
+    .aboutBottom{
+        gap: 0em;
+       flex-direction: column;
+    }
+
+    
+
+    .aboutBottomRight>h1{
+        font-size: 1.1em;
+    }
+
+
+    .aboutBottomRight>p{
+        font-size: 0.6em;
+    }
+
+    .aboutBottomRight{
+        width: 70%;
+        margin-left: 0em;
+    }
+
+    .aboutPic{
+        width: 200px;
+        height: 140px;
+        margin-left: 0em;
+    }
+
+    .aboutBottomRight>span{
+        margin-bottom: 0.4em;
+    }
+   
+   }
+
+   @media screen and (max-width: 413px){
+    .aboutPic{
+        width: 200px;
+        height: 120px;
+        margin-left: 0em;
+    }
+   }

@@ -1,0 +1,166 @@
+.shoppingCart{
+    width: 100vw;
+    min-height: 96vh;
+    background-color: #393C43;
+}
+
+.cartDiv{
+    display: flex;
+    padding-top: 10em;
+    justify-content: space-around;
+}
+
+.checkoutDiv{
+    color: white;
+    background-color: black;
+    padding: 2em 3em 5em 3em ;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.519);
+    max-height: 270px;
+}
+
+.checkoutHead{
+    margin-bottom: 1em;
+    text-align: center;
+    color: #5994D3;
+}
+
+
+.productValue{
+    margin-left: 2em;
+}
+
+.deliveryValue{
+    margin-left: 4.5em;
+}
+
+.totalValue{
+    margin-left: 6em ;
+}
+
+.checkout-btn{
+    background-color: #5994D3 !important;
+    padding: 0.5em !important;
+}
+
+.checkout-btn:hover{
+    background-color: #b92527 !important;
+}
+
+.itemOnCart{
+    width: 50em;
+    max-height: 15em;
+    background-color: black;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.519);
+    display: flex;
+    color: white;
+    gap: 50px;
+}
+
+.itemOnCartPic{
+    width: 15em;
+    height: 15em;
+}
+
+.onCart{
+    width: 50%;
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5em;
+    margin-bottom: 1em;
+}
+
+.itemNameOnCart{
+    margin-top: 2em;
+    margin-bottom: 2em;
+    color: #5994D3;
+}
+
+.btn-decreaseCart,.btn-increaseCart{
+    background-color: #393C43 !important;
+}
+
+.btn-decreaseCart:hover,.btn-increaseCart:hover{
+    background-color: #5994D3 !important;
+}
+
+.delete-btn{
+    margin-left: 3em;
+    background-color: #b92527 !important;
+    padding: 0px 20px 0px 20px !important;
+}
+
+.delete-btn:hover{
+    background-color: #5994D3 !important;
+}
+
+.itemQuantityCart{
+    display: flex;
+    gap: 0.5em;
+}
+
+.emptyCart{
+    padding: 2em;
+}
+
+.emptyOnCart{
+    width: 50em;
+    background-color: black;
+    color: white;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.519);
+    text-align: center;
+}
+
+
+
+@media screen and (max-width: 480px) {
+   .cartDiv{
+    flex-direction: column;
+   }
+
+
+   .emptyOnCart{
+    width: 21em;
+    margin-left: 1.5em;
+   }
+
+   .checkoutDiv{
+    width: 15em;
+    margin-left: 1.5em;
+    margin-bottom: 2em;
+   }
+
+   .itemOnCartPic{
+    width: 9em;
+    height: 10em;
+   }
+
+   .itemOnCart{
+    height: 10em;
+    margin-left: 1.5em;
+    width: 21em;
+    gap: 10px;
+   }
+
+   .right>p{
+    font-size: 0.5em;
+    width: 15em;
+   }
+
+   .itemNameOnCart{
+    margin-top: 0.5em;
+    margin-bottom: 0em;
+   }
+  
+   .itemQuantityCart{
+    gap: 0px;
+   }
+
+   .itemQuantityCart>span{
+    margin: 0px 5px 0px 5px;
+   }
+
+}
